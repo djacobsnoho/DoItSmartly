@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" highlightedImage="Default.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YXc-pZ-zU3">
+                    <rect key="frame" x="0.0" y="-200" width="485" height="780"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="780" id="6OV-cv-XH5"/>
+                        <constraint firstAttribute="width" constant="485" id="gVO-Su-Dq9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="YXc-pZ-zU3" secondAttribute="centerY" constant="-11" id="IIz-ZA-avi"/>
+                <constraint firstAttribute="trailing" secondItem="YXc-pZ-zU3" secondAttribute="trailing" constant="-5" id="NBQ-Dk-cYV"/>
+                <constraint firstAttribute="bottom" secondItem="YXc-pZ-zU3" secondAttribute="bottom" constant="-200" id="QKK-QM-ml4"/>
+                <constraint firstItem="YXc-pZ-zU3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-200" id="T2f-MB-Q7Z"/>
+                <constraint firstItem="YXc-pZ-zU3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="te4-xH-IXY"/>
+                <constraint firstAttribute="centerX" secondItem="YXc-pZ-zU3" secondAttribute="centerX" constant="-2.5" id="vue-KU-AGl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="318" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Default.png" width="320" height="480"/>
+    </resources>
+</document>

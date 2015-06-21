@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdC-9N-jB1" customClass="CircularPickerView">
+                                <rect key="frame" x="0.0" y="4" width="600" height="162"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUO-A5-fzV">
+                                <rect key="frame" x="-125" y="153" width="835" height="1392"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Schedule it">
+                                    <color key="titleColor" red="1" green="0.64766490215817796" blue="0.089579467604963381" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scheduleTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MND-UR-4nA"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Jgq-xe-NRM">
+                                <rect key="frame" x="16" y="1568" width="568" height="394"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCellTableViewCell" id="K1M-uH-Sen" userLabel="TaskCellTableViewCell" customClass="TaskCellTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K1M-uH-Sen" id="frr-Tn-KRV">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-Mh-bzB">
+                                                    <rect key="frame" x="263" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsV-rr-beP">
+                                                    <rect key="frame" x="500" y="7" width="60" height="30"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Simulate">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="simulateTouchUpInside:" destination="K1M-uH-Sen" eventType="touchUpInside" id="30D-qU-T6A"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="RsV-rr-beP" secondAttribute="centerY" constant="-0.5" id="8l9-Wk-4n2"/>
+                                                <constraint firstItem="RsV-rr-beP" firstAttribute="trailing" secondItem="frr-Tn-KRV" secondAttribute="trailingMargin" id="NFp-qP-sgq"/>
+                                                <constraint firstAttribute="centerX" secondItem="jtA-Mh-bzB" secondAttribute="centerX" id="g8I-aD-3Zl"/>
+                                                <constraint firstAttribute="centerY" secondItem="jtA-Mh-bzB" secondAttribute="centerY" id="gT3-Dw-0fN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskLabel" destination="jtA-Mh-bzB" id="2Pc-YX-GIj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6071530989391285" green="0.84208622490573148" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JdC-9N-jB1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="33P-Z4-qbG"/>
+                            <constraint firstItem="JdC-9N-jB1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-16" id="B8W-ov-qgT"/>
+                            <constraint firstItem="DUO-A5-fzV" firstAttribute="top" secondItem="JdC-9N-jB1" secondAttribute="bottom" constant="8" id="GFE-a8-D3P"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Jgq-xe-NRM" secondAttribute="bottom" id="P0X-mC-Cl9"/>
+                            <constraint firstItem="Jgq-xe-NRM" firstAttribute="top" secondItem="DUO-A5-fzV" secondAttribute="bottom" constant="2" id="nJ8-CD-bqu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jgq-xe-NRM" secondAttribute="trailing" id="vlz-Y4-dBe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JdC-9N-jB1" secondAttribute="trailing" constant="-16" id="y0D-tr-BnK"/>
+                            <constraint firstItem="Jgq-xe-NRM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yKm-UW-J4F"/>
+                            <constraint firstItem="JdC-9N-jB1" firstAttribute="centerX" secondItem="DUO-A5-fzV" secondAttribute="centerX" constant="-0.5" id="zaO-uo-JaV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="JdC-9N-jB1" id="Hba-fn-5MI"/>
+                        <outlet property="scheduleButton" destination="DUO-A5-fzV" id="rzD-L2-Cyh"/>
+                        <outlet property="tableView" destination="Jgq-xe-NRM" id="DUS-Wj-QJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

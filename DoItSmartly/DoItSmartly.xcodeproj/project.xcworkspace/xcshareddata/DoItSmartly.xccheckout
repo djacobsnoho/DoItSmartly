@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6B068B51-6BAA-496D-8F45-DE1A81089754</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DoItSmartly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E5308198ADCC7676958DDC4EF5EA6D5A2B0536B3</key>
+		<string>https://github.com/interestix/skunk-works.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DoItSmartly/DoItSmartly.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E5308198ADCC7676958DDC4EF5EA6D5A2B0536B3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/interestix/skunk-works.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E5308198ADCC7676958DDC4EF5EA6D5A2B0536B3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E5308198ADCC7676958DDC4EF5EA6D5A2B0536B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>skunk-works</string>
+		</dict>
+	</array>
+</dict>
+</plist>
